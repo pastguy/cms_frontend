@@ -1,0 +1,16 @@
+$prefix: "__O_" + floor(random() * 10000000000) + "_Y_" +
+  floor(random() * 10000000000) + "_O_" + floor(random() * 10000000000) + "_L_" +
+  floor(random() * 10000000000) + "__" !default;
+.#{$prefix} {
+  min-height: 80vh;
+  border-radius: 0 0 3px 3px;
+  background: #ffffff;
+  // ------------------------------------------------------------------
+  .test {
+    color: red;
+  }
+  // ------------------------------------------------------------------
+}
+:export {
+  auto: #{$prefix};
+}

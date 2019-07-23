@@ -1,0 +1,106 @@
+{
+  "name": "@icedesign/cms-scaffold",
+  "version": "1.0.0",
+  "description": "该模板内置了丰富的区块，主要适用于类 CMS 管理系统，使用时需要根据需求进行删除和添加",
+  "files": [
+    "src/",
+    "build/",
+    "public/",
+    "tests/",
+    "_gitignore",
+    ".editorconfig",
+    ".eslintignore",
+    ".eslintrc",
+    "ice.config.js"
+  ],
+  "dependencies": {
+    "@alifd/next": "^1.x",
+    "@antv/data-set": "^0.8.5",
+    "@icedesign/container": "^1.x",
+    "@icedesign/form-binder": "^1.x",
+    "@icedesign/foundation-symbol": "^1.x",
+    "@icedesign/img": "^1.x",
+    "@icedesign/layout": "^1.x",
+    "@icedesign/theme": "^1.x",
+    "antd": "^3.13.3",
+    "axios": "^0.17.1",
+    "bizcharts": "^3.2.2",
+    "bizgoblin": "0.0.1",
+    "braft-editor": "^2.2.10",
+    "classnames": "^2.2.5",
+    "enquire-js": "^0.1.2",
+    "history": "^4.7.2",
+    "hoist-non-react-statics": "^2.5.5",
+    "invariant": "^2.2.4",
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.10",
+    "lodash.clonedeep": "^4.5.0",
+    "moment": "^2.23.0",
+    "path-to-regexp": "^2.2.1",
+    "prop-types": "^15.5.8",
+    "rc-color-picker": "^1.2.6",
+    "react": "^16.2.0",
+    "react-color": "^2.17.0",
+    "react-confirm-alert": "^2.4.1",
+    "react-copy-to-clipboard": "^5.0.1",
+    "react-document-title": "^2.0.3",
+    "react-dom": "^16.4.1",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "5.0.0-alpha.6",
+    "redux": "3.6.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.3",
+    "eslint": "^4.13.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-babel": "^4.1.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
+    "ice-scripts": "^2.0.0",
+    "ice-plugin-fusion": "^0.1.4",
+    "ice-plugin-moment-locales": "^0.1.0"
+  },
+  "scripts": {
+    "start": "ice-scripts dev",
+    "build": "ice-scripts build",
+    "lint": "eslint . --ext '.js,.jsx' --fix"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scaffoldConfig": {
+    "builder": "ice-scripts",
+    "name": "ice-design-cms",
+    "title": "CMS 内容管理系统",
+    "categories": [
+      "行业领域"
+    ],
+    "screenshot": "https://img.alicdn.com/tfs/TB1iHmDDHPpK1RjSZFFXXa5PpXa-2872-1580.png",
+    "screenshots": [
+      "https://img.alicdn.com/tfs/TB1iHmDDHPpK1RjSZFFXXa5PpXa-2872-1580.png",
+      "https://img.alicdn.com/tfs/TB19HubDSzqK1RjSZPcXXbTepXa-2872-1580.png",
+      "https://img.alicdn.com/tfs/TB1oc9IDOrpK1RjSZFhXXXSdXXa-2872-1580.png"
+    ]
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ice-lab/react-materials/tree/master/scaffolds/ice-design-cms"
+  },
+  "title": "cms",
+  "proxyConfig": {
+    "/ump-platform-web": {
+      "enable": true,
+      "target": "http://ali-dev.ahotels.tech"
+    },
+    "/**": {
+      "enable": true,
+      "target": "http://127.0.0.1:8080"
+    }
+  }
+}

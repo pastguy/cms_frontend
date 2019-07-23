@@ -1,0 +1,18 @@
+.next-input.next-disabled {
+    ::-webkit-input-placeholder,
+    input,
+    em,
+    textarea {
+      color: #888 !important;
+    }
+  }
+  
+  .next-input.next-disabled input::-moz-placeholder {
+    color: #888 !important;
+  }
+  .next-input.next-disabled input:-ms-input-placeholder {
+    color: #888 !important;
+  }
+  .next-overlay-wrapper .next-overlay-inner.next-dialog-container {
+    z-index: 9999;
+  }
